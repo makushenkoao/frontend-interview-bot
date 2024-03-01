@@ -121,9 +121,9 @@
 //   }
 // };
 
-const { Bot } = require('grammy');
+const { Telegraf } = require('telegraf');
 
-const bot = new Bot(process.env.BOT_TOKEN);
+const bot = new Telegraf(process.env.BOT_TOKEN);
 
 bot.command('start', async (ctx) => {
   console.log("Received /start command");
