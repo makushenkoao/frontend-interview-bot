@@ -6,7 +6,7 @@ const {
     GrammyError,
     HttpError,
 } = require("grammy");
-const { getRandomQuestion, getCorrectAnswer } = require("../utils/utils");
+const { getRandomQuestion, getCorrectAnswer } = require("./utils/utils");
 
 const bot = new Bot(process.env.BOT_TOKEN);
 

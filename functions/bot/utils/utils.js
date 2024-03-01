@@ -1,4 +1,4 @@
-const questions = require("../../databases/questions.json");
+const questions = require("../../../databases/questions.json");
 const { Random } = require("random-js");
 
 const getRandomQuestion = (topic) => {
