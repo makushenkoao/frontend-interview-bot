@@ -10,7 +10,7 @@ const { getRandomQuestion, getCorrectAnswer } = require("./utils/utils");
 
 const bot = new Bot(process.env.BOT_TOKEN);
 
-console.log("BOT_TOKEN:", process.env.BOT_TOKEN);
+console.log(process.env.BOT_TOKEN)
 
 bot.command("start", async (ctx) => {
   const startKeyboard = new Keyboard()
@@ -109,6 +109,7 @@ bot.catch((err) => {
 
 exports.handler = async (event) => {
   try {
+    await bot.init();
     await bot.handleUpdate(JSON.parse(event.body));
     return { statusCode: 200, body: "" };
   } catch (e) {
@@ -119,5 +120,3 @@ exports.handler = async (event) => {
     };
   }
 };
-
-await bot.init();
