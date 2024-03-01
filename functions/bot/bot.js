@@ -121,25 +121,28 @@
 //   }
 // };
 
-const { Bot } = require("grammy")
-const bot = new Bot(process.env.BOT_TOKEN)
+const { Bot } = require('grammy');
 
-bot.start(ctx => {
-  console.log("Received /start command")
-  try {
-    ctx.reply("Congrats! You've connected to Netlify!")
-  } catch (e) {
-    console.error("error in start action:", e)
-    ctx.reply("Error occurred")
-  }
-})
+const bot = new Bot(process.env.BOT_TOKEN);
 
-exports.handler = async event => {
+bot.command('start', async (ctx) => {
+  console.log("Received /start command");
   try {
-    await bot.handleUpdate(JSON.parse(event.body))
-    return { statusCode: 200, body: "" }
+    await ctx.reply("Congrats! You've connected to Netlify!");
   } catch (e) {
-    console.error("error in handler:", e)
-    return { statusCode: 400, body: "This endpoint is meant for bot and telegram communication" }
+    console.error("error in start action:", e);
+    await ctx.reply("Error occurred");
   }
-}
+});
+
+exports.handler = async (event) => {
+  try {
+    const body = JSON.parse(event.body);
+    await bot.api.handleUpdate(body);
+    return { statusCode: 200, body: "" };
+  } catch (e) {
+    console.error("error in handler:", e);
+    return { statusCode: 400, body: "This endpoint is meant for bot and telegram communication" };
+  }
+};
+
