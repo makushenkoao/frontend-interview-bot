@@ -138,7 +138,7 @@ bot.command('start', async (ctx) => {
 exports.handler = async (event) => {
   try {
     const body = JSON.parse(event.body);
-    await bot.api.handleUpdate(body);
+    await bot.handleUpdate(body);
     return { statusCode: 200, body: "" };
   } catch (e) {
     console.error("error in handler:", e);
