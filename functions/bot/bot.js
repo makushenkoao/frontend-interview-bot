@@ -108,27 +108,27 @@
 // });
 //
 // exports.handler = async (event) => {
-//   try {
-//     await bot.init();
-//     await bot.handleUpdate(JSON.parse(event.body));
-//     return { statusCode: 200, body: "" };
-//   } catch (e) {
-//     console.error("error in handler:", e);
-//     return {
-//       statusCode: 400,
-//       body: "This endpoint is meant for bot and telegram communication",
-//     };
-//   }
+// try {
+//   const body = JSON.parse(event.body);
+//   await bot.handleUpdate(body);
+//   return { statusCode: 200, body: "" };
+// } catch (e) {
+//   console.error("error in handler:", e);
+//   return {
+//     statusCode: 400,
+//     body: "This endpoint is meant for bot and telegram communication",
+//   };
+// }
 // };
 
-const { Bot } = require('grammy');
+const { Bot } = require("grammy");
 
 const bot = new Bot(process.env.BOT_TOKEN);
 
-bot.command('start', async (ctx) => {
+bot.command("start", async (ctx) => {
   console.log("Received /start command");
   try {
-    await ctx.reply("Congrats! You've connected to Netlify!");
+    await ctx.reply("Congrats! You've connected to Netlify! (grammy)");
   } catch (e) {
     console.error("error in start action:", e);
     await ctx.reply("Error occurred");
@@ -138,11 +138,13 @@ bot.command('start', async (ctx) => {
 exports.handler = async (event) => {
   try {
     const body = JSON.parse(event.body);
-    await bot.handleUpdate(body);
+    await bot.handleUpdate(body, bot);
     return { statusCode: 200, body: "" };
   } catch (e) {
     console.error("error in handler:", e);
-    return { statusCode: 400, body: "This endpoint is meant for bot and telegram communication" };
+    return {
+      statusCode: 400,
+      body: "This endpoint is meant for bot and telegram communication",
+    };
   }
 };
-
