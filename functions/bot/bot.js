@@ -125,6 +125,8 @@ const { Bot } = require("grammy");
 
 const bot = new Bot(process.env.BOT_TOKEN);
 
+bot.init();
+
 bot.command("start", async (ctx) => {
   console.log("Received /start command");
   try {
