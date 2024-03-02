@@ -22,6 +22,8 @@ bot.hears(
         const topic = ctx.message.text.toLowerCase();
         const { question, questionTopic } = getRandomQuestion(topic);
 
+        console.log(question)
+
         let inlineKeyboard;
 
         if (question.hasOptions) {
