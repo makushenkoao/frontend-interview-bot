@@ -1,8 +1,6 @@
 require("dotenv").config();
 const { Telegraf, Markup } = require("telegraf");
 const { getRandomQuestion, getCorrectAnswer } = require("./utils/utils");
-const path = require("path");
-const pdf = require('../../databases/web.pdf')
 const axios = require("axios");
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
