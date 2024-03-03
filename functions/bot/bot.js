@@ -21,8 +21,99 @@ bot.command("start", async (ctx) => {
     );
 });
 
-bot.command("learn", async (ctx) => {
+bot.command("learn1", async (ctx) => {
     const pdfFilePath = path.join(__dirname, "..", "..", "databases", "web.pdf");
+    console.log(pdfFilePath)
+    const message = await ctx.reply(
+        "Немного подождите, идёт загрузка PDF-файла...",
+    );
+
+    try {
+        await ctx.replyWithDocument({ source: pdfFilePath });
+
+        await ctx.deleteMessage(message.message_id);
+    } catch (error) {
+        console.error("Error sending PDF file:", error);
+        await ctx.reply(
+            "Произошла ошибка при отправке PDF-файла. Воспользуйтесь командой позже.",
+        );
+    }
+});
+
+bot.command("learn2", async (ctx) => {
+    const pdfFilePath = path.join(__dirname, "..", "databases", "web.pdf");
+    const message = await ctx.reply(
+        "Немного подождите, идёт загрузка PDF-файла...",
+    );
+
+    try {
+        await ctx.replyWithDocument({ source: pdfFilePath });
+
+        await ctx.deleteMessage(message.message_id);
+    } catch (error) {
+        console.error("Error sending PDF file:", error);
+        await ctx.reply(
+            "Произошла ошибка при отправке PDF-файла. Воспользуйтесь командой позже.",
+        );
+    }
+});
+
+bot.command("learn3", async (ctx) => {
+    const pdfFilePath = path.join(__dirname, "..", "..", "..", "databases", "web.pdf");
+    const message = await ctx.reply(
+        "Немного подождите, идёт загрузка PDF-файла...",
+    );
+
+    try {
+        await ctx.replyWithDocument({ source: pdfFilePath });
+
+        await ctx.deleteMessage(message.message_id);
+    } catch (error) {
+        console.error("Error sending PDF file:", error);
+        await ctx.reply(
+            "Произошла ошибка при отправке PDF-файла. Воспользуйтесь командой позже.",
+        );
+    }
+});
+
+bot.command("learn4", async (ctx) => {
+    const pdfFilePath = '../../databases/web.pdf'
+    const message = await ctx.reply(
+        "Немного подождите, идёт загрузка PDF-файла...",
+    );
+
+    try {
+        await ctx.replyWithDocument({ source: pdfFilePath });
+
+        await ctx.deleteMessage(message.message_id);
+    } catch (error) {
+        console.error("Error sending PDF file:", error);
+        await ctx.reply(
+            "Произошла ошибка при отправке PDF-файла. Воспользуйтесь командой позже.",
+        );
+    }
+});
+
+bot.command("learn5", async (ctx) => {
+    const pdfFilePath = '../../../databases/web.pdf'
+    const message = await ctx.reply(
+        "Немного подождите, идёт загрузка PDF-файла...",
+    );
+
+    try {
+        await ctx.replyWithDocument({ source: pdfFilePath });
+
+        await ctx.deleteMessage(message.message_id);
+    } catch (error) {
+        console.error("Error sending PDF file:", error);
+        await ctx.reply(
+            "Произошла ошибка при отправке PDF-файла. Воспользуйтесь командой позже.",
+        );
+    }
+});
+
+bot.command("learn6", async (ctx) => {
+    const pdfFilePath = '../databases/web.pdf'
     const message = await ctx.reply(
         "Немного подождите, идёт загрузка PDF-файла...",
     );
