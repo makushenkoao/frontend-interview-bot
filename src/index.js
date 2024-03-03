@@ -1,8 +1,7 @@
 require("dotenv").config();
 const { Telegraf, Markup } = require("telegraf");
 const { getRandomQuestion, getCorrectAnswer } = require("./utils/utils");
-const path = require("path");
-
+const axios = require("axios");
 const bot = new Telegraf(process.env.BOT_TOKEN);
 
 bot.command("start", async (ctx) => {
@@ -22,20 +21,26 @@ bot.command("start", async (ctx) => {
 });
 
 bot.command("learn", async (ctx) => {
-  const pdfFilePath = path.join(__dirname, "..", "databases", "web.pdf");
   const message = await ctx.reply(
     "Немного подождите, идёт загрузка PDF-файла...",
   );
 
   try {
-    await ctx.replyWithDocument({ source: pdfFilePath });
+    const pdfUrl =
+      "https://drive.google.com/file/d/1XEP6rMbC2RJtct8q5z9QvCLrehtsaAt8/view?usp=sharing";
+    const pdfResponse = await axios.get(pdfUrl, {
+      responseType: "arraybuffer",
+    });
+
+    await ctx.replyWithDocument({
+      source: Buffer.from(pdfResponse.data),
+      filename: "notes.pdf",
+    });
 
     await ctx.deleteMessage(message.message_id);
   } catch (error) {
-    console.error("Error sending PDF file:", error);
-    await ctx.reply(
-      "Произошла ошибка при отправке PDF-файла. Воспользуйтесь командой позже.",
-    );
+    console.error("Error sending PDF:", error);
+    ctx.reply("К сожалению, при отправке PDF-файла произошла ошибка.");
   }
 });
 
@@ -66,7 +71,17 @@ bot.command("docs", async (ctx) => {
 });
 
 bot.hears(
-  ["HTML", "CSS", "JavaScript", "React", "Node", "Next", "TypeScript", "RN", "Случайный вопрос"],
+  [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Node",
+    "Next",
+    "TypeScript",
+    "RN",
+    "Случайный вопрос",
+  ],
   async (ctx) => {
     const topic = ctx.message.text.toLowerCase();
     const { question, questionTopic } = getRandomQuestion(topic);
