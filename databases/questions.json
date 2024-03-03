@@ -1809,5 +1809,765 @@
         }
       ]
     }
+  ],
+  "typescript": [
+    {
+      "id": 1,
+      "text": "Что такое TypeScript?",
+      "hasOptions": false,
+      "answer": "TypeScript - это язык программирования с открытым исходным кодом, разработанный Microsoft. Он представляет собой надмножество языка JavaScript, добавляющее статическую типизацию и другие возможности, такие как интерфейсы, перечисления и дженерики, что делает его более мощным и удобным для разработки крупных проектов."
+    },
+    {
+      "id": 2,
+      "text": "Как объявить переменную типа number в TypeScript?",
+      "hasOptions": false,
+      "answer": "Для объявления переменной типа number в TypeScript используется ключевое слово 'let', 'const' или 'var', за которым следует имя переменной, двоеточие и ключевое слово 'number'. Например: let myNumber: number;"
+    },
+    {
+      "id": 3,
+      "text": "Какой тип данных используется для определения строковых значений в TypeScript?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "string", "isCorrect": true },
+        { "id": 2, "text": "str", "isCorrect": false },
+        { "id": 3, "text": "text", "isCorrect": false },
+        { "id": 4, "text": "s", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Что такое интерфейс в TypeScript?",
+      "hasOptions": false,
+      "answer": "Интерфейс в TypeScript - это способ определения контракта для объекта, который указывает, какие свойства и методы должны присутствовать в объекте. Он используется для описания структуры объекта без реализации его функциональности."
+    },
+    {
+      "id": 5,
+      "text": "Как объявить интерфейс в TypeScript?",
+      "hasOptions": false,
+      "answer": "Для объявления интерфейса в TypeScript используется ключевое слово 'interface', за которым следует имя интерфейса и фигурные скобки с описанием свойств и их типов. Например: interface MyInterface { property1: string; property2: number; }"
+    },
+    {
+      "id": 6,
+      "text": "Как определить необязательное свойство в интерфейсе TypeScript?",
+      "hasOptions": false,
+      "answer": "Чтобы определить необязательное свойство в интерфейсе TypeScript, после имени свойства ставится знак вопроса (?). Например: interface MyInterface { optionalProperty?: string; }"
+    },
+    {
+      "id": 7,
+      "text": "Какой тип данных используется для определения логических значений (true/false) в TypeScript?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "boolean", "isCorrect": true },
+        { "id": 2, "text": "bool", "isCorrect": false },
+        { "id": 3, "text": "logic", "isCorrect": false },
+        { "id": 4, "text": "logical", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Что такое типизация в TypeScript?",
+      "hasOptions": false,
+      "answer": "Типизация в TypeScript - это процесс указания типов данных для переменных, параметров функций и возвращаемых значений функций. Это позволяет обнаруживать ошибки на этапе компиляции и повышает надежность и читаемость кода."
+    },
+    {
+      "id": 9,
+      "text": "Какой оператор используется для определения типа в TypeScript?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "typeof", "isCorrect": true },
+        { "id": 2, "text": "type", "isCorrect": false },
+        { "id": 3, "text": "instanceof", "isCorrect": false },
+        { "id": 4, "text": "is", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Как объявить тип перечисления (enum) в TypeScript?",
+      "hasOptions": false,
+      "answer": "Для объявления типа перечисления (enum) в TypeScript используется ключевое слово 'enum', за которым следует имя перечисления и фигурные скобки с перечисленными значениями. Например: enum MyEnum { Value1, Value2, Value3 };"
+    },
+    {
+      "id": 11,
+      "text": "Что такое дженерики (generics) в TypeScript?",
+      "hasOptions": false,
+      "answer": "Дженерики (generics) в TypeScript - это специальный механизм, который позволяет создавать компоненты, работающие с различными типами данных, не теряя при этом типовой информации. Они позволяют создавать обобщенные типы, функции и классы."
+    },
+    {
+      "id": 12,
+      "text": "Как использовать дженерики (generics) в TypeScript?",
+      "hasOptions": false,
+      "answer": "Для использования дженериков в TypeScript после имени функции, класса или интерфейса ставится угловая скобка <>, в которой указываются параметры типа. Например: function myFunction<T>(arg: T): T { return arg; }"
+    },
+    {
+      "id": 13,
+      "text": "Какой тип данных используется для определения значений null и undefined в TypeScript?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "null", "isCorrect": false },
+        { "id": 2, "text": "undefined", "isCorrect": false },
+        { "id": 3, "text": "void", "isCorrect": false },
+        { "id": 4, "text": "null | undefined", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Как объявить тип функции в TypeScript?",
+      "hasOptions": false,
+      "answer": "Для объявления типа функции в TypeScript используется следующий синтаксис: (параметры) => возвращаемый_тип. Например: let myFunction: (x: number, y: number) => number;"
+    },
+    {
+      "id": 15,
+      "text": "Какой тип данных используется для определения значений массивов в TypeScript?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "array", "isCorrect": false },
+        { "id": 2, "text": "Array", "isCorrect": true },
+        { "id": 3, "text": "list", "isCorrect": false },
+        { "id": 4, "text": "[]", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 16,
+      "text": "Что такое пространства имен (namespaces) в TypeScript?",
+      "hasOptions": false,
+      "answer": "Пространства имен (namespaces) в TypeScript - это способ группирования логически связанных типов, переменных, функций и классов внутри отдельного контейнера. Они помогают организовывать и структурировать код, делая его более читаемым и поддерживаемым."
+    },
+    {
+      "id": 17,
+      "text": "Как импортировать модуль в TypeScript?",
+      "hasOptions": false,
+      "answer": "Для импорта модуля в TypeScript используется ключевое слово 'import', за которым следует имя модуля и ключевое слово 'from', за которым следует путь к модулю. Например: import { myModule } from './myModule';"
+    },
+    {
+      "id": 18,
+      "text": "Как экспортировать модуль из TypeScript?",
+      "hasOptions": false,
+      "answer": "Для экспорта модуля из TypeScript используется ключевое слово 'export', перед объявлением переменной, функции или класса. Например: export class MyClass { }"
+    },
+    {
+      "id": 19,
+      "text": "Как создать класс в TypeScript?",
+      "hasOptions": false,
+      "answer": "Для создания класса в TypeScript используется ключевое слово 'class', за которым следует имя класса и фигурные скобки с описанием свойств и методов. Например: class MyClass { }"
+    },
+    {
+      "id": 20,
+      "text": "Как создать новый экземпляр класса в TypeScript?",
+      "hasOptions": false,
+      "answer": "Для создания нового экземпляра класса в TypeScript используется ключевое слово 'new', за которым следует имя класса и аргументы конструктора. Например: let myInstance = new MyClass();"
+    }
+  ],
+  "node": [
+    {
+      "id": 1,
+      "text": "Что такое Node.js?",
+      "hasOptions": false,
+      "answer": "Node.js - это среда выполнения JavaScript, построенная на движке JavaScript V8 от Google, которая позволяет запускать JavaScript на сервере. Она позволяет разработчикам создавать высокопроизводительные и масштабируемые сетевые приложения."
+    },
+    {
+      "id": 2,
+      "text": "Как запустить сервер в Node.js?",
+      "hasOptions": false,
+      "answer": "Для запуска сервера в Node.js используется модуль http. Сначала необходимо подключить этот модуль с помощью require, а затем создать сервер с помощью http.createServer() и указать порт, на котором сервер будет слушать запросы, с помощью метода listen(). Например: const http = require('http'); const server = http.createServer((req, res) => { res.end('Hello World!'); }); server.listen(3000);"
+    },
+    {
+      "id": 3,
+      "text": "Как подключить модуль в Node.js?",
+      "hasOptions": false,
+      "answer": "Для подключения модуля в Node.js используется функция require(), которая принимает путь к модулю в качестве аргумента. Например: const myModule = require('./myModule');"
+    },
+    {
+      "id": 4,
+      "text": "Как создать HTTP сервер в Node.js?",
+      "hasOptions": false,
+      "answer": "Для создания HTTP сервера в Node.js используется модуль http. Сначала этот модуль необходимо подключить с помощью require, а затем создать сервер с помощью http.createServer(). Например: const http = require('http'); const server = http.createServer((req, res) => { res.end('Hello World!'); });"
+    },
+    {
+      "id": 5,
+      "text": "Что такое пакетный менеджер в Node.js?",
+      "hasOptions": false,
+      "answer": "Пакетный менеджер в Node.js - это инструмент, который позволяет управлять зависимостями в проекте, устанавливать, обновлять и удалять пакеты. Наиболее популярные пакетные менеджеры для Node.js - это npm (Node Package Manager) и Yarn."
+    },
+    {
+      "id": 6,
+      "text": "Как установить пакет в Node.js с помощью npm?",
+      "hasOptions": false,
+      "answer": "Для установки пакета в Node.js с помощью npm необходимо использовать команду npm install <название_пакета>. Например: npm install express"
+    },
+    {
+      "id": 7,
+      "text": "Как создать и запустить Node.js приложение?",
+      "hasOptions": false,
+      "answer": "Чтобы создать и запустить Node.js приложение, необходимо создать файл с расширением .js, написать код приложения, а затем запустить его с помощью команды node <имя_файла>.js. Например: node app.js"
+    },
+    {
+      "id": 8,
+      "text": "Что такое callback в Node.js?",
+      "hasOptions": false,
+      "answer": "Callback в Node.js - это функция, которая передается как аргумент в другую функцию и вызывается после завершения выполнения асинхронной операции. Он используется для обработки результата асинхронной операции или обработки ошибок."
+    },
+    {
+      "id": 9,
+      "text": "Что такое асинхронное программирование в Node.js?",
+      "hasOptions": false,
+      "answer": "Асинхронное программирование в Node.js - это подход к программированию, при котором операции выполняются параллельно, не блокируя основной поток выполнения. Он использует обратные вызовы (callbacks), промисы (promises) или асинхронные функции (async/await) для работы с асинхронными операциями."
+    },
+    {
+      "id": 10,
+      "text": "Что такое модуль в Node.js?",
+      "hasOptions": false,
+      "answer": "Модуль в Node.js - это отдельный файл, который содержит код, который может быть использован в других частях приложения. Модули позволяют организовывать код приложения, делая его более читаемым и поддерживаемым."
+    },
+    {
+      "id": 11,
+      "text": "Как создать собственный модуль в Node.js?",
+      "hasOptions": false,
+      "answer": "Чтобы создать собственный модуль в Node.js, необходимо создать отдельный файл с расширением .js, написать в нем код модуля, а затем экспортировать его с помощью ключевого слова module.exports или exports. Например: // в файле myModule.js module.exports = { myFunction: function() { return 'Hello World!'; } };"
+    },
+    {
+      "id": 12,
+      "text": "Как использовать сторонний модуль в Node.js?",
+      "hasOptions": false,
+      "answer": "Чтобы использовать сторонний модуль в Node.js, необходимо установить его с помощью npm, а затем подключить его в своем приложении с помощью функции require(). Например: const myModule = require('myModule');"
+    },
+    {
+      "id": 13,
+      "text": "Как обрабатывать асинхронные ошибки в Node.js?",
+      "hasOptions": false,
+      "answer": "Для обработки асинхронных ошибок в Node.js часто используется механизм обратных вызовов (callbacks), промисы (promises) или асинхронные функции (async/await). Это позволяет элегантно обрабатывать ошибки и избегать блокировки основного потока выполнения."
+    },
+    {
+      "id": 14,
+      "text": "Как отправить HTTP запрос в Node.js?",
+      "hasOptions": false,
+      "answer": "Для отправки HTTP запроса в Node.js можно использовать модуль http или сторонние библиотеки, такие как axios или node-fetch. Например, с использованием модуля http: const http = require('http'); http.get('http://example.com', (res) => { console.log('Response received'); });"
+    },
+    {
+      "id": 15,
+      "text": "Что такое middleware в Node.js?",
+      "hasOptions": false,
+      "answer": "Middleware в Node.js - это функция, которая выполняется перед обработкой запроса сервером. Она может выполнять различные операции, такие как проверка аутентификации, обработка данных и многое другое. Middleware используется для организации кода приложения и обеспечения его масштабируемости и поддерживаемости."
+    },
+    {
+      "id": 16,
+      "text": "Как обрабатывать формы в Node.js?",
+      "hasOptions": false,
+      "answer": "Для обработки форм в Node.js можно использовать различные модули, такие как express, multer или formidable. Эти модули позволяют удобно обрабатывать отправленные данные формы, включая файлы и текстовые поля."
+    },
+    {
+      "id": 17,
+      "text": "Как подключить базу данных к Node.js приложению?",
+      "hasOptions": false,
+      "answer": "Для подключения базы данных к Node.js приложению можно использовать различные ORM (Object-Relational Mapping) или библиотеки для работы с базами данных, такие как Sequelize, Mongoose или knex.js. Эти библиотеки облегчают взаимодействие с базой данных и позволяют управлять данными с помощью JavaScript."
+    },
+    {
+      "id": 18,
+      "text": "Как создать RESTful API в Node.js?",
+      "hasOptions": false,
+      "answer": "Для создания RESTful API в Node.js можно использовать различные фреймворки, такие как Express.js, Koa.js или Hapi.js. Эти фреймворки предоставляют удобные инструменты для создания маршрутов, обработки запросов и отправки ответов в соответствии с принципами REST."
+    },
+    {
+      "id": 19,
+      "text": "Как использовать промисы в Node.js?",
+      "hasOptions": false,
+      "answer": "Для использования промисов в Node.js можно использовать встроенные функции, такие как Promise.resolve(), Promise.reject() или создавать собственные промисы с помощью конструктора Promise. Промисы позволяют элегантно обрабатывать асинхронные операции и избегать глубокой вложенности обратных вызовов (callback hell)."
+    },
+    {
+      "id": 20,
+      "text": "Как создать WebSocket сервер в Node.js?",
+      "hasOptions": false,
+      "answer": "Для создания WebSocket сервера в Node.js можно использовать различные библиотеки, такие как ws, Socket.IO или uWebSockets.js. Эти библиотеки предоставляют удобные инструменты для создания и управления WebSocket соединениями, а также обмена данными в реальном времени."
+    },
+    {
+      "id": 21,
+      "text": "Какая функция используется для асинхронного чтения файла в Node.js?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "fs.readSync", "isCorrect": false },
+        { "id": 2, "text": "fs.readFile", "isCorrect": true },
+        { "id": 3, "text": "fs.read", "isCorrect": false },
+        { "id": 4, "text": "fs.readFileSync", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 22,
+      "text": "Какой метод используется для установки значения переменной окружения в Node.js?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "process.env.set", "isCorrect": false },
+        { "id": 2, "text": "process.env.assign", "isCorrect": false },
+        { "id": 3, "text": "process.env.setEnv", "isCorrect": false },
+        { "id": 4, "text": "process.env", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 23,
+      "text": "Какой модуль используется для работы с файловой системой в Node.js?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "http", "isCorrect": false },
+        { "id": 2, "text": "fs", "isCorrect": true },
+        { "id": 3, "text": "path", "isCorrect": false },
+        { "id": 4, "text": "os", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 24,
+      "text": "Какая функция используется для асинхронной записи файла в Node.js?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "fs.write", "isCorrect": false },
+        { "id": 2, "text": "fs.writeSync", "isCorrect": false },
+        { "id": 3, "text": "fs.writeFile", "isCorrect": true },
+        { "id": 4, "text": "fs.appendFile", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 25,
+      "text": "Какой модуль используется для работы с путями в Node.js?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "http", "isCorrect": false },
+        { "id": 2, "text": "fs", "isCorrect": false },
+        { "id": 3, "text": "path", "isCorrect": true },
+        { "id": 4, "text": "os", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 26,
+      "text": "Какой метод используется для чтения содержимого директории в Node.js?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "fs.readDir", "isCorrect": false },
+        { "id": 2, "text": "fs.readDirectory", "isCorrect": false },
+        { "id": 3, "text": "fs.readdir", "isCorrect": true },
+        { "id": 4, "text": "fs.dirRead", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 27,
+      "text": "Какой метод используется для удаления файла в Node.js?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "fs.deleteFile", "isCorrect": false },
+        { "id": 2, "text": "fs.remove", "isCorrect": false },
+        { "id": 3, "text": "fs.unlink", "isCorrect": true },
+        { "id": 4, "text": "fs.delete", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 28,
+      "text": "Какой модуль используется для работы с HTTP в Node.js?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "http", "isCorrect": true },
+        { "id": 2, "text": "fs", "isCorrect": false },
+        { "id": 3, "text": "path", "isCorrect": false },
+        { "id": 4, "text": "os", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 29,
+      "text": "Какой метод используется для получения информации о файле в Node.js?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "fs.info", "isCorrect": false },
+        { "id": 2, "text": "fs.fileInfo", "isCorrect": false },
+        { "id": 3, "text": "fs.stat", "isCorrect": true },
+        { "id": 4, "text": "fs.fileStat", "isCorrect": false }
+      ]
+    }
+  ],
+  "rn": [
+    {
+      "id": 1,
+      "text": "Что такое React Native?",
+      "hasOptions": false,
+      "answer": "React Native - это фреймворк для разработки мобильных приложений, который позволяет использовать язык программирования JavaScript и React для создания кроссплатформенных приложений."
+    },
+    {
+      "id": 2,
+      "text": "Какие основные преимущества React Native?",
+      "hasOptions": false,
+      "answer": "Основные преимущества React Native включают кроссплатформенность, повторное использование кода, быструю разработку и возможность использования нативных компонентов."
+    },
+    {
+      "id": 3,
+      "text": "Какие компоненты используются для создания пользовательского интерфейса в React Native?",
+      "hasOptions": false,
+      "answer": "Для создания пользовательского интерфейса в React Native используются компоненты, такие как View, Text, TextInput, Image, ScrollView, TouchableOpacity и другие."
+    },
+    {
+      "id": 4,
+      "text": "Как создать новый проект React Native?",
+      "hasOptions": false,
+      "answer": "Для создания нового проекта React Native используется утилита командной строки Expo CLI или React Native CLI. Например, для создания проекта с помощью Expo CLI можно использовать команду expo init <название_проекта>."
+    },
+    {
+      "id": 5,
+      "text": "Что такое JSX в React Native?",
+      "hasOptions": false,
+      "answer": "JSX в React Native - это расширение языка JavaScript, которое позволяет писать код в стиле XML для создания элементов пользовательского интерфейса. JSX затем компилируется в обычный JavaScript код."
+    },
+    {
+      "id": 6,
+      "text": "Что такое компоненты в React Native?",
+      "hasOptions": false,
+      "answer": "Компоненты в React Native - это независимые части пользовательского интерфейса, которые можно повторно использовать в различных частях приложения. Они могут содержать как состояние (state), так и методы жизненного цикла."
+    },
+    {
+      "id": 7,
+      "text": "Какой метод жизненного цикла используется для инициализации компонента в React Native?",
+      "hasOptions": false,
+      "answer": "Метод жизненного цикла componentDidMount() используется для инициализации компонента в React Native. Он вызывается сразу после монтирования компонента в дерево DOM."
+    },
+    {
+      "id": 8,
+      "text": "Какие основные концепции следует понимать при работе с React Native?",
+      "hasOptions": false,
+      "answer": "Основные концепции, которые следует понимать при работе с React Native, включают компоненты, состояние (state), свойства (props), жизненный цикл компонента и навигацию."
+    },
+    {
+      "id": 9,
+      "text": "Что такое Redux в контексте React Native?",
+      "hasOptions": false,
+      "answer": "Redux - это библиотека для управления состоянием приложения в React Native. Он помогает организовать и централизовать состояние приложения, делая его более предсказуемым и легко управляемым."
+    },
+    {
+      "id": 10,
+      "text": "Как создать собственный компонент в React Native?",
+      "hasOptions": false,
+      "answer": "Для создания собственного компонента в React Native нужно определить новый компонент как класс или функцию, экспортировать его и затем использовать в других частях приложения. Например, можно создать новый компонент с помощью синтаксиса class MyClass extends React.Component { }."
+    },
+    {
+      "id": 11,
+      "text": "Какой компонент используется для отображения текста в React Native?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "Text", "isCorrect": true },
+        { "id": 2, "text": "TextView", "isCorrect": false },
+        { "id": 3, "text": "TextBox", "isCorrect": false },
+        { "id": 4, "text": "Label", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Какой компонент используется для создания кнопки в React Native?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "Button", "isCorrect": true },
+        { "id": 2, "text": "Touchable", "isCorrect": false },
+        { "id": 3, "text": "Pressable", "isCorrect": false },
+        { "id": 4, "text": "TouchableOpacity", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Какой компонент используется для ввода текста в React Native?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "TextInput", "isCorrect": true },
+        { "id": 2, "text": "InputField", "isCorrect": false },
+        { "id": 3, "text": "TextField", "isCorrect": false },
+        { "id": 4, "text": "TextEditor", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Какой компонент используется для отображения изображения в React Native?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "Image", "isCorrect": true },
+        { "id": 2, "text": "ImageView", "isCorrect": false },
+        { "id": 3, "text": "ImageBox", "isCorrect": false },
+        { "id": 4, "text": "Picture", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Какой компонент используется для создания прокручиваемого списка в React Native?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "ScrollView", "isCorrect": true },
+        { "id": 2, "text": "ListView", "isCorrect": false },
+        { "id": 3, "text": "ScrollList", "isCorrect": false },
+        { "id": 4, "text": "ScrollBox", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 16,
+      "text": "Какой метод жизненного цикла вызывается при обновлении компонента в React Native?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "componentDidUpdate", "isCorrect": true },
+        { "id": 2, "text": "componentWillUpdate", "isCorrect": false },
+        { "id": 3, "text": "componentUpdated", "isCorrect": false },
+        { "id": 4, "text": "componentUpdated", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Какой метод жизненного цикла вызывается перед удалением компонента в React Native?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "componentWillUnmount", "isCorrect": true },
+        { "id": 2, "text": "componentDidUnmount", "isCorrect": false },
+        { "id": 3, "text": "componentRemove", "isCorrect": false },
+        { "id": 4, "text": "componentWillRemove", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Какой метод используется для изменения состояния компонента в React Native?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "this.setState", "isCorrect": true },
+        { "id": 2, "text": "setState", "isCorrect": false },
+        { "id": 3, "text": "changeState", "isCorrect": false },
+        { "id": 4, "text": "updateState", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 19,
+      "text": "Какой компонент используется для создания модального окна в React Native?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "Modal", "isCorrect": true },
+        { "id": 2, "text": "Popup", "isCorrect": false },
+        { "id": 3, "text": "Alert", "isCorrect": false },
+        { "id": 4, "text": "Dialog", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 20,
+      "text": "Какой компонент используется для навигации между экранами в React Native?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "Navigator", "isCorrect": false },
+        { "id": 2, "text": "Navigation", "isCorrect": false },
+        { "id": 3, "text": "Router", "isCorrect": false },
+        { "id": 4, "text": "StackNavigator", "isCorrect": true }
+      ]
+    }
+  ],
+  "next": [
+    {
+      "id": 1,
+      "text": "Что такое Next.js?",
+      "hasOptions": false,
+      "answer": "Next.js - это фреймворк React для разработки веб-приложений с использованием серверного рендеринга и статической генерации."
+    },
+    {
+      "id": 2,
+      "text": "Какие основные преимущества Next.js?",
+      "hasOptions": false,
+      "answer": "Основные преимущества Next.js включают поддержку серверного рендеринга и статической генерации, автоматическое кодо-разделение, предварительный рендеринг на стороне сервера, простую настройку и интеграцию с React."
+    },
+    {
+      "id": 3,
+      "text": "Как создать новый проект Next.js?",
+      "hasOptions": false,
+      "answer": "Для создания нового проекта Next.js нужно использовать команду create-next-app или создать проект с нуля, установив пакет next и react."
+    },
+    {
+      "id": 4,
+      "text": "Что такое страницы в Next.js?",
+      "hasOptions": false,
+      "answer": "Страницы в Next.js представляют собой компоненты React, которые используются для отображения контента на различных маршрутах приложения."
+    },
+    {
+      "id": 5,
+      "text": "Что такое динамический роутинг в Next.js?",
+      "hasOptions": false,
+      "answer": "Динамический роутинг в Next.js позволяет создавать динамические маршруты, используя квадратные скобки в имени файла страницы, например, [id].js."
+    },
+    {
+      "id": 6,
+      "text": "Как реализовать API роуты в Next.js?",
+      "hasOptions": false,
+      "answer": "API роуты в Next.js реализуются с использованием папки pages/api, в которой можно создавать файлы с API эндпоинтами. Файлы в этой папке автоматически обрабатываются Next.js и могут содержать серверный код для обработки запросов."
+    },
+    {
+      "id": 7,
+      "text": "Как использовать статическую генерацию в Next.js?",
+      "hasOptions": false,
+      "answer": "Статическая генерация в Next.js позволяет предварительно сгенерировать HTML для страниц на этапе сборки проекта, что улучшает производительность и SEO. Для использования статической генерации нужно экспортировать компонент страницы с функцией getStaticProps."
+    },
+    {
+      "id": 8,
+      "text": "Что такое серверный рендеринг в Next.js?",
+      "hasOptions": false,
+      "answer": "Серверный рендеринг в Next.js позволяет генерировать HTML для каждого запроса на стороне сервера. Это полезно для создания динамических страниц с данными, которые могут изменяться в зависимости от запроса."
+    },
+    {
+      "id": 9,
+      "text": "Какие режимы работы есть в Next.js?",
+      "hasOptions": false,
+      "answer": "Next.js поддерживает два основных режима работы: разработки (development) и продакшна (production). Режим разработки обеспечивает быструю перезагрузку при изменении кода, а режим продакшна оптимизирует проект для развертывания в продакшн."
+    },
+    {
+      "id": 10,
+      "text": "Какие файлы и папки являются частью структуры проекта Next.js?",
+      "hasOptions": false,
+      "answer": "Структура проекта Next.js включает папки pages, public, api (для API роутов), styles (для глобальных стилей), а также файлы package.json, next.config.js и другие."
+    },
+    {
+      "id": 11,
+      "text": "Как создать новую страницу в проекте Next.js?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "Создать новый файл в папке pages",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Создать новый файл в папке components",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "Создать новый файл в папке src",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Создать новый файл в папке public",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Какие файлы используются для настройки маршрутов в Next.js?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "Файлы в папке pages", "isCorrect": false },
+        { "id": 2, "text": "next.config.js", "isCorrect": true },
+        { "id": 3, "text": "package.json", "isCorrect": false },
+        { "id": 4, "text": ".babelrc", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Какой метод используется для предварительной загрузки данных на стороне сервера в Next.js?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "getInitialProps", "isCorrect": true },
+        { "id": 2, "text": "getStaticProps", "isCorrect": false },
+        { "id": 3, "text": "useEffect", "isCorrect": false },
+        { "id": 4, "text": "fetch", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Какой компонент используется для добавления мета-тегов в заголовок страницы в Next.js?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "NextHead", "isCorrect": false },
+        { "id": 2, "text": "Head", "isCorrect": true },
+        { "id": 3, "text": "Meta", "isCorrect": false },
+        { "id": 4, "text": "DocumentHead", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Какой метод жизненного цикла используется для выполнения действий перед монтированием компонента в Next.js?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "componentDidMount", "isCorrect": false },
+        { "id": 2, "text": "useEffect", "isCorrect": true },
+        { "id": 3, "text": "componentWillMount", "isCorrect": false },
+        { "id": 4, "text": "componentWillUnmount", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 16,
+      "text": "Какой метод используется для получения параметров маршрута в Next.js?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "useRouter", "isCorrect": false },
+        { "id": 2, "text": "getParams", "isCorrect": false },
+        { "id": 3, "text": "useParams", "isCorrect": false },
+        { "id": 4, "text": "getServerSideProps", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Какой метод используется для выполнения действий после монтирования компонента в Next.js?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "componentDidMount", "isCorrect": true },
+        { "id": 2, "text": "useEffect", "isCorrect": false },
+        { "id": 3, "text": "componentWillMount", "isCorrect": false },
+        { "id": 4, "text": "componentDidUnmount", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Какой метод используется для выполнения действий перед размонтированием компонента в Next.js?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "componentWillUnmount", "isCorrect": false },
+        { "id": 2, "text": "useEffect", "isCorrect": false },
+        { "id": 3, "text": "componentWillUnmount", "isCorrect": false },
+        { "id": 4, "text": "componentWillUnmount", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 19,
+      "text": "Как создать динамический маршрут в Next.js?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "Создать файл с квадратными скобками в папке pages",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Использовать файл _dynamic.js",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "Использовать файл dynamic.js в папке components",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Использовать файл dynamicRoute.js в папке routes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "text": "Как создать компонент высшего порядка в Next.js?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "Создать функцию в папке components",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "Использовать функцию hoc() в любом компоненте",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "Создать функцию в папке pages",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Использовать функцию withHOC() для обертки компонента",
+          "isCorrect": true
+        }
+      ]
+    }
   ]
 }
