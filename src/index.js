@@ -1,4 +1,4 @@
-const { Telegraf, Markup } = require('telegraf');
+const { Telegraf } = require('telegraf');
 const start = require('./commands/start/start');
 const documentation = require('./commands/documentation/documentation');
 const sendQuestion = require('./commands/sendQuestion/sendQuestion');
