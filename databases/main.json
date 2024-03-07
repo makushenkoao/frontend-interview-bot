@@ -7,7 +7,8 @@
     },
     "basics": {
         "start": {
-            "title": "Привет, мир!"
+            "title": "Привет, мир!",
+            "fileId": "1en-1zdfgEAyhuYn4RkIy4dyj8WJWSU8s"
         },
         "code-structure": {
             "title": "Структура кода"
