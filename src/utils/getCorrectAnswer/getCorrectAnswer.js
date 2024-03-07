@@ -1,13 +1,13 @@
-const questions = require("../../../databases/questions.json");
+const questions = require('../../../databases/questions.json');
 
 const getCorrectAnswer = (topic, id) => {
-  const question = questions[topic].find((question) => question.id === id);
+    const question = questions[topic].find((question) => question.id === id);
 
-  if (!question.hasOptions) {
-    return question.answer;
-  }
+    if (!question.hasOptions) {
+        return question.answer;
+    }
 
-  return question.options.find((option) => option.isCorrect).text;
+    return question.options.find((option) => option.isCorrect).text;
 };
 
 module.exports = getCorrectAnswer;

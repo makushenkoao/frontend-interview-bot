@@ -1,16 +1,16 @@
-const questions = require("../../../databases/questions.json");
-const { Random } = require("random-js");
+const questions = require('../../../databases/questions.json');
+const { Random } = require('random-js');
 
 const getRandomQuestion = (topic) => {
     const random = new Random();
 
     let questionTopic = topic.toLowerCase();
 
-    if (questionTopic === "случайный вопрос") {
+    if (questionTopic === 'случайный вопрос') {
         questionTopic =
             Object.keys(questions)[
                 random.integer(0, Object.keys(questions).length - 1)
-                ];
+            ];
     }
 
     const randomQuestionIndex = random.integer(

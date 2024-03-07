@@ -1,541 +1,541 @@
 {
-  "introduction": {
-    "introduction-in-javascript": {
-      "title": "Введение в JavaScript",
-      "fileId": "1XHXYH8oFARmi0ELqb2dXimT2YFdlsHtW"
-    }
-  },
-  "basics": {
-    "start": {
-      "title": "Привет, мир!"
-    },
-    "code-structure": {
-      "title": "Структура кода"
-    },
-    "strict-mode": {
-      "title": "Строгий режим"
-    },
-    "variables": {
-      "title": "Переменные"
-    },
-    "data-types": {
-      "title": "Типы данных"
-    },
-    "interaction": {
-      "title": "Взаимодействие: alert, prompt, confirm"
-    },
-    "type-conversion": {
-      "title": "Преобразование типов"
-    },
-    "basic-operators": {
-      "title": "Базовые операторы, математика"
-    },
-    "comparison-operators": {
-      "title": "Операторы сравнения"
-    },
-    "conditional": {
-      "title": "Условное ветвление"
-    },
-    "logical-operators": {
-      "title": "Логические операторы"
-    },
-    "assignment-operators": {
-      "title": "Операторы нулевого слияния и присваивания"
-    },
-    "cycles": {
-      "title": "Циклы while и for"
-    },
-    "switch": {
-      "title": "Конструкция \"switch\""
-    },
-    "functions": {
-      "title": "Функции"
-    },
-    "function-expression": {
-      "title": "Function Expression"
-    },
-    "arrow-function": {
-      "title": "Стрелочные функции, основы"
-    },
-    "javascript-features": {
-      "title": "Особенности JavaScript"
-    }
-  },
-  "algorithms": [
-    {
-      "id": 1,
-      "title": "Поиск",
-      "child": [
-        {
-          "id": 1,
-          "title": "Линейный поиск",
-          "description": "Линейный поиск (также известный как последовательный поиск) - это один из самых простых алгоритмов поиска элемента в коллекции данных, такой как массив или список. Этот алгоритм последовательно проверяет каждый элемент в коллекции до тех пор, пока не будет найден искомый элемент или будет проверено каждое значение.",
-          "complexity": "O(n)",
-          "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/1_linear_search.js"
-        },
-        {
-          "id": 2,
-          "title": "Бинарный поиск",
-          "description": "Бинарный поиск - это эффективный алгоритм поиска элемента в отсортированном массиве. Алгоритм разделяет массив пополам и сравнивает искомый элемент с элементом в середине массива.",
-          "complexity": "O(log n)",
-          "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/2_binary_search.js"
+    "introduction": {
+        "introduction-in-javascript": {
+            "title": "Введение в JavaScript",
+            "fileId": "1XHXYH8oFARmi0ELqb2dXimT2YFdlsHtW"
         }
-      ]
     },
-    {
-      "id": 2,
-      "title": "Сортировка",
-      "child": [
+    "basics": {
+        "start": {
+            "title": "Привет, мир!"
+        },
+        "code-structure": {
+            "title": "Структура кода"
+        },
+        "strict-mode": {
+            "title": "Строгий режим"
+        },
+        "variables": {
+            "title": "Переменные"
+        },
+        "data-types": {
+            "title": "Типы данных"
+        },
+        "interaction": {
+            "title": "Взаимодействие: alert, prompt, confirm"
+        },
+        "type-conversion": {
+            "title": "Преобразование типов"
+        },
+        "basic-operators": {
+            "title": "Базовые операторы, математика"
+        },
+        "comparison-operators": {
+            "title": "Операторы сравнения"
+        },
+        "conditional": {
+            "title": "Условное ветвление"
+        },
+        "logical-operators": {
+            "title": "Логические операторы"
+        },
+        "assignment-operators": {
+            "title": "Операторы нулевого слияния и присваивания"
+        },
+        "cycles": {
+            "title": "Циклы while и for"
+        },
+        "switch": {
+            "title": "Конструкция \"switch\""
+        },
+        "functions": {
+            "title": "Функции"
+        },
+        "function-expression": {
+            "title": "Function Expression"
+        },
+        "arrow-function": {
+            "title": "Стрелочные функции, основы"
+        },
+        "javascript-features": {
+            "title": "Особенности JavaScript"
+        }
+    },
+    "algorithms": [
         {
-          "id": 3,
-          "title": "Сортировка пузырьком",
-          "description": "Сортировка пузырьком - это простой алгоритм сортировки, который сравнивает и меняет соседние элементы, пока массив не станет отсортированным.",
-          "complexity": "O(n^2)",
-          "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/4_bubble_sort.js"
+            "id": 1,
+            "title": "Поиск",
+            "child": [
+                {
+                    "id": 1,
+                    "title": "Линейный поиск",
+                    "description": "Линейный поиск (также известный как последовательный поиск) - это один из самых простых алгоритмов поиска элемента в коллекции данных, такой как массив или список. Этот алгоритм последовательно проверяет каждый элемент в коллекции до тех пор, пока не будет найден искомый элемент или будет проверено каждое значение.",
+                    "complexity": "O(n)",
+                    "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/1_linear_search.js"
+                },
+                {
+                    "id": 2,
+                    "title": "Бинарный поиск",
+                    "description": "Бинарный поиск - это эффективный алгоритм поиска элемента в отсортированном массиве. Алгоритм разделяет массив пополам и сравнивает искомый элемент с элементом в середине массива.",
+                    "complexity": "O(log n)",
+                    "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/2_binary_search.js"
+                }
+            ]
         },
         {
-          "id": 4,
-          "title": "Сортировка вставками",
-          "description": "Сортировка вставками - это алгоритм сортировки, который сначала считается, что первый элемент отсортирован, а затем последовательно вставляет остальные элементы в правильное место.",
-          "complexity": "O(n^2)",
-          "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/3_selection_sort.js"
+            "id": 2,
+            "title": "Сортировка",
+            "child": [
+                {
+                    "id": 3,
+                    "title": "Сортировка пузырьком",
+                    "description": "Сортировка пузырьком - это простой алгоритм сортировки, который сравнивает и меняет соседние элементы, пока массив не станет отсортированным.",
+                    "complexity": "O(n^2)",
+                    "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/4_bubble_sort.js"
+                },
+                {
+                    "id": 4,
+                    "title": "Сортировка вставками",
+                    "description": "Сортировка вставками - это алгоритм сортировки, который сначала считается, что первый элемент отсортирован, а затем последовательно вставляет остальные элементы в правильное место.",
+                    "complexity": "O(n^2)",
+                    "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/3_selection_sort.js"
+                },
+                {
+                    "id": 5,
+                    "title": "Быстрая сортировка",
+                    "description": "Быстрая сортировка - это один из самых быстрых и эффективных алгоритмов сортировки. Он использует стратегию 'разделяй и властвуй', разделяя массив на подмассивы и сортируя их по отдельности.",
+                    "complexity": "O(n log n)",
+                    "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/5_quick_sort.js"
+                }
+            ]
         },
         {
-          "id": 5,
-          "title": "Быстрая сортировка",
-          "description": "Быстрая сортировка - это один из самых быстрых и эффективных алгоритмов сортировки. Он использует стратегию 'разделяй и властвуй', разделяя массив на подмассивы и сортируя их по отдельности.",
-          "complexity": "O(n log n)",
-          "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/5_quick_sort.js"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Рекурсивные алгоритмы",
-      "child": [
-        {
-          "id": 6,
-          "title": "Факториал числа",
-          "description": "Рекурсивный алгоритм для вычисления факториала числа. Факториал числа - это произведение всех положительных целых чисел от 1 до n.",
-          "complexity": "O(n)",
-          "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/6_recursion.js"
+            "id": 3,
+            "title": "Рекурсивные алгоритмы",
+            "child": [
+                {
+                    "id": 6,
+                    "title": "Факториал числа",
+                    "description": "Рекурсивный алгоритм для вычисления факториала числа. Факториал числа - это произведение всех положительных целых чисел от 1 до n.",
+                    "complexity": "O(n)",
+                    "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/6_recursion.js"
+                },
+                {
+                    "id": 7,
+                    "title": "Рекурсивное вычисление чисел Фибоначчи",
+                    "description": "Числа Фибоначчи - это последовательность чисел, где каждое следующее число равно сумме двух предыдущих. Рекурсивный алгоритм позволяет вычислить число Фибоначчи для заданного индекса.",
+                    "complexity": "O(2^n)",
+                    "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/6_recursion.js"
+                }
+            ]
         },
         {
-          "id": 7,
-          "title": "Рекурсивное вычисление чисел Фибоначчи",
-          "description": "Числа Фибоначчи - это последовательность чисел, где каждое следующее число равно сумме двух предыдущих. Рекурсивный алгоритм позволяет вычислить число Фибоначчи для заданного индекса.",
-          "complexity": "O(2^n)",
-          "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/6_recursion.js"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "title": "Алгоритм Дейкстры",
-      "child": [
-        {
-          "id": 8,
-          "title": "Поиск кратчайшего пути в графе",
-          "description": "Алгоритм Дейкстры используется для поиска кратчайшего пути во взвешенном графе. Он начинает с исходного узла и находит кратчайшие расстояния до всех остальных узлов графа.",
-          "complexity": "O((V + E) log V)",
-          "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/9_algoritm_dijkstra.js"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "title": "Обход деревьев",
-      "child": [
-        {
-          "id": 9,
-          "title": "Обход в глубину",
-          "description": "Обход дерева в глубину - это алгоритм, который посещает все узлы дерева по вертикали, прежде чем двигаться вниз. Он часто используется для поиска в глубину в графах и обходе деревьев.",
-          "complexity": "O(V + E)",
-          "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/10_tree_algs.js"
+            "id": 4,
+            "title": "Алгоритм Дейкстры",
+            "child": [
+                {
+                    "id": 8,
+                    "title": "Поиск кратчайшего пути в графе",
+                    "description": "Алгоритм Дейкстры используется для поиска кратчайшего пути во взвешенном графе. Он начинает с исходного узла и находит кратчайшие расстояния до всех остальных узлов графа.",
+                    "complexity": "O((V + E) log V)",
+                    "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/9_algoritm_dijkstra.js"
+                }
+            ]
         },
         {
-          "id": 10,
-          "title": "Обход в ширину",
-          "description": "Обход дерева в ширину - это алгоритм, который посещает все узлы дерева по горизонтали, начиная с корневого узла и последовательно переходя к узлам на одном уровне перед переходом к следующему уровню.",
-          "complexity": "O(V + E)",
-          "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/7_poisk_v_shirinu.js"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "title": "Кеширование",
-      "child": [
+            "id": 5,
+            "title": "Обход деревьев",
+            "child": [
+                {
+                    "id": 9,
+                    "title": "Обход в глубину",
+                    "description": "Обход дерева в глубину - это алгоритм, который посещает все узлы дерева по вертикали, прежде чем двигаться вниз. Он часто используется для поиска в глубину в графах и обходе деревьев.",
+                    "complexity": "O(V + E)",
+                    "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/10_tree_algs.js"
+                },
+                {
+                    "id": 10,
+                    "title": "Обход в ширину",
+                    "description": "Обход дерева в ширину - это алгоритм, который посещает все узлы дерева по горизонтали, начиная с корневого узла и последовательно переходя к узлам на одном уровне перед переходом к следующему уровню.",
+                    "complexity": "O(V + E)",
+                    "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/7_poisk_v_shirinu.js"
+                }
+            ]
+        },
         {
-          "id": 11,
-          "title": "Простое кеширование",
-          "description": "Простое кеширование - это метод сохранения результатов выполнения функции для ускорения последующих вызовов с теми же аргументами. Это полезный прием для оптимизации функций, которые могут быть ресурсоемкими.",
-          "complexity": "",
-          "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/11_cash.js"
+            "id": 6,
+            "title": "Кеширование",
+            "child": [
+                {
+                    "id": 11,
+                    "title": "Простое кеширование",
+                    "description": "Простое кеширование - это метод сохранения результатов выполнения функции для ускорения последующих вызовов с теми же аргументами. Это полезный прием для оптимизации функций, которые могут быть ресурсоемкими.",
+                    "complexity": "",
+                    "code": "https://github.com/makushenkoao/algorithms-and-data-structure/blob/main/11_cash.js"
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "structures": [
-    {
-      "id": 1,
-      "title": "Массивы",
-      "title_original": "Arrays",
-      "description": "Массив представляет собой последовательный набор каких-то данных. Он занимает конкретный участок в памяти и изначально определено, сколько элементов в нем будет находиться.",
-      "advantages": [
-        "Быстрый доступ к элементам по индексу",
-        "Прост в использовании"
-      ],
-      "disadvantages": [
-        "Дорогая операция вставки и удаления элементов",
-        "Требует заранее определенного размера"
-      ],
-      "complexities": {
-        "average": {
-          "access": "O(1)",
-          "search": "O(n)",
-          "insertion": "O(n)",
-          "deletion": "O(n)"
+    ],
+    "structures": [
+        {
+            "id": 1,
+            "title": "Массивы",
+            "title_original": "Arrays",
+            "description": "Массив представляет собой последовательный набор каких-то данных. Он занимает конкретный участок в памяти и изначально определено, сколько элементов в нем будет находиться.",
+            "advantages": [
+                "Быстрый доступ к элементам по индексу",
+                "Прост в использовании"
+            ],
+            "disadvantages": [
+                "Дорогая операция вставки и удаления элементов",
+                "Требует заранее определенного размера"
+            ],
+            "complexities": {
+                "average": {
+                    "access": "O(1)",
+                    "search": "O(n)",
+                    "insertion": "O(n)",
+                    "deletion": "O(n)"
+                },
+                "worst": {
+                    "access": "O(1)",
+                    "search": "O(n)",
+                    "insertion": "O(n)",
+                    "deletion": "O(n)"
+                }
+            }
         },
-        "worst": {
-          "access": "O(1)",
-          "search": "O(n)",
-          "insertion": "O(n)",
-          "deletion": "O(n)"
-        }
-      }
-    },
-    {
-      "id": 2,
-      "title": "Объекты",
-      "title_original": "Objects",
-      "description": "Объекты представляют собой коллекции пар ключ-значение. Ключи (или свойства) являются строками и используются для доступа к значениям. Объекты в JavaScript широко используются для организации и хранения данных.",
-      "advantages": [
-        "Гибкость структуры",
-        "Легко добавлять и удалять свойства"
-      ],
-      "disadvantages": [
-        "Медленный доступ к значениям",
-        "Не гарантированный порядок свойств"
-      ],
-      "complexities": {
-        "average": {
-          "access": "O(1)",
-          "search": "O(n)",
-          "insertion": "O(1)",
-          "deletion": "O(1)"
+        {
+            "id": 2,
+            "title": "Объекты",
+            "title_original": "Objects",
+            "description": "Объекты представляют собой коллекции пар ключ-значение. Ключи (или свойства) являются строками и используются для доступа к значениям. Объекты в JavaScript широко используются для организации и хранения данных.",
+            "advantages": [
+                "Гибкость структуры",
+                "Легко добавлять и удалять свойства"
+            ],
+            "disadvantages": [
+                "Медленный доступ к значениям",
+                "Не гарантированный порядок свойств"
+            ],
+            "complexities": {
+                "average": {
+                    "access": "O(1)",
+                    "search": "O(n)",
+                    "insertion": "O(1)",
+                    "deletion": "O(1)"
+                },
+                "worst": {
+                    "access": "O(1)",
+                    "search": "O(n)",
+                    "insertion": "O(1)",
+                    "deletion": "O(1)"
+                }
+            }
         },
-        "worst": {
-          "access": "O(1)",
-          "search": "O(n)",
-          "insertion": "O(1)",
-          "deletion": "O(1)"
-        }
-      }
-    },
-    {
-      "id": 3,
-      "title": "Связный список",
-      "title_original": "Linked Lists",
-      "description": "Связный список состоит из узлов, каждый из которых содержит значение и ссылку на следующий узел (или null, если это последний узел). Поиск в связанном списке может потребовать прохода через все узлы.",
-      "advantages": [
-        "Эффективное добавление и удаление элементов",
-        "Не требует заранее определенного размера"
-      ],
-      "disadvantages": [
-        "Медленный доступ к элементам по индексу",
-        "Требуется дополнительное место для указателей"
-      ],
-      "complexities": {
-        "average": {
-          "access": "O(n)",
-          "search": "O(n)",
-          "insertion": "O(1)",
-          "deletion": "O(1)"
+        {
+            "id": 3,
+            "title": "Связный список",
+            "title_original": "Linked Lists",
+            "description": "Связный список состоит из узлов, каждый из которых содержит значение и ссылку на следующий узел (или null, если это последний узел). Поиск в связанном списке может потребовать прохода через все узлы.",
+            "advantages": [
+                "Эффективное добавление и удаление элементов",
+                "Не требует заранее определенного размера"
+            ],
+            "disadvantages": [
+                "Медленный доступ к элементам по индексу",
+                "Требуется дополнительное место для указателей"
+            ],
+            "complexities": {
+                "average": {
+                    "access": "O(n)",
+                    "search": "O(n)",
+                    "insertion": "O(1)",
+                    "deletion": "O(1)"
+                },
+                "worst": {
+                    "access": "O(n)",
+                    "search": "O(n)",
+                    "insertion": "O(1)",
+                    "deletion": "O(1)"
+                }
+            }
         },
-        "worst": {
-          "access": "O(n)",
-          "search": "O(n)",
-          "insertion": "O(1)",
-          "deletion": "O(1)"
-        }
-      }
-    },
-    {
-      "id": 4,
-      "title": "Очередь",
-      "title_original": "Queue",
-      "description": "Очередь - это структура данных, где элементы добавляются в конец (enqueue) и удаляются из начала (dequeue). Очереди используются для управления данными в порядке, в котором они были добавлены.",
-      "advantages": [
-        "Подходит для моделирования очередей в реальном мире",
-        "Соблюдает принцип FIFO (первым пришел, первым вышел)"
-      ],
-      "disadvantages": [
-        "Медленный доступ к произвольным элементам",
-        "В случае неограниченной очереди может привести к исчерпанию памяти"
-      ],
-      "complexities": {
-        "average": {
-          "access": "O(n)",
-          "search": "O(n)",
-          "insertion": "O(1)",
-          "deletion": "O(1)"
+        {
+            "id": 4,
+            "title": "Очередь",
+            "title_original": "Queue",
+            "description": "Очередь - это структура данных, где элементы добавляются в конец (enqueue) и удаляются из начала (dequeue). Очереди используются для управления данными в порядке, в котором они были добавлены.",
+            "advantages": [
+                "Подходит для моделирования очередей в реальном мире",
+                "Соблюдает принцип FIFO (первым пришел, первым вышел)"
+            ],
+            "disadvantages": [
+                "Медленный доступ к произвольным элементам",
+                "В случае неограниченной очереди может привести к исчерпанию памяти"
+            ],
+            "complexities": {
+                "average": {
+                    "access": "O(n)",
+                    "search": "O(n)",
+                    "insertion": "O(1)",
+                    "deletion": "O(1)"
+                },
+                "worst": {
+                    "access": "O(n)",
+                    "search": "O(n)",
+                    "insertion": "O(1)",
+                    "deletion": "O(1)"
+                }
+            }
         },
-        "worst": {
-          "access": "O(n)",
-          "search": "O(n)",
-          "insertion": "O(1)",
-          "deletion": "O(1)"
-        }
-      }
-    },
-    {
-      "id": 5,
-      "title": "Стек",
-      "title_original": "Stack",
-      "description": "Стек - это структура данных, где элементы добавляются и удаляются с одного конца (вершины стека). Операции над стеком включают в себя push (добавление) и pop (удаление) элементов.",
-      "advantages": [
-        "Простота реализации",
-        "Эффективное добавление и удаление элементов"
-      ],
-      "disadvantages": [
-        "Ограниченный доступ к данным (только верхний элемент)",
-        "В случае неограниченного роста может привести к переполнению стека"
-      ],
-      "complexities": {
-        "average": {
-          "access": "O(n)",
-          "search": "O(n)",
-          "insertion": "O(1)",
-          "deletion": "O(1)"
+        {
+            "id": 5,
+            "title": "Стек",
+            "title_original": "Stack",
+            "description": "Стек - это структура данных, где элементы добавляются и удаляются с одного конца (вершины стека). Операции над стеком включают в себя push (добавление) и pop (удаление) элементов.",
+            "advantages": [
+                "Простота реализации",
+                "Эффективное добавление и удаление элементов"
+            ],
+            "disadvantages": [
+                "Ограниченный доступ к данным (только верхний элемент)",
+                "В случае неограниченного роста может привести к переполнению стека"
+            ],
+            "complexities": {
+                "average": {
+                    "access": "O(n)",
+                    "search": "O(n)",
+                    "insertion": "O(1)",
+                    "deletion": "O(1)"
+                },
+                "worst": {
+                    "access": "O(n)",
+                    "search": "O(n)",
+                    "insertion": "O(1)",
+                    "deletion": "O(1)"
+                }
+            }
         },
-        "worst": {
-          "access": "O(n)",
-          "search": "O(n)",
-          "insertion": "O(1)",
-          "deletion": "O(1)"
-        }
-      }
-    },
-    {
-      "id": 6,
-      "title": "Сет",
-      "title_original": "Set",
-      "description": "Set представляет собой коллекцию уникальных элементов без дубликатов. Основное отличие от объектов в том, что мы можем как ключ хранить не только строковое значение, но и объекты.",
-      "advantages": [
-        "Хранение уникальных элементов",
-        "Эффективная проверка на вхождение"
-      ],
-      "disadvantages": [
-        "Не гарантированный порядок элементов",
-        "Ограниченные операции"
-      ],
-      "complexities": {
-        "average": {
-          "access": "N/A",
-          "search": "O(log n)",
-          "insertion": "O(log n)",
-          "deletion": "O(log n)"
+        {
+            "id": 6,
+            "title": "Сет",
+            "title_original": "Set",
+            "description": "Set представляет собой коллекцию уникальных элементов без дубликатов. Основное отличие от объектов в том, что мы можем как ключ хранить не только строковое значение, но и объекты.",
+            "advantages": [
+                "Хранение уникальных элементов",
+                "Эффективная проверка на вхождение"
+            ],
+            "disadvantages": [
+                "Не гарантированный порядок элементов",
+                "Ограниченные операции"
+            ],
+            "complexities": {
+                "average": {
+                    "access": "N/A",
+                    "search": "O(log n)",
+                    "insertion": "O(log n)",
+                    "deletion": "O(log n)"
+                },
+                "worst": {
+                    "access": "N/A",
+                    "search": "O(log n)",
+                    "insertion": "O(log n)",
+                    "deletion": "O(log n)"
+                }
+            }
         },
-        "worst": {
-          "access": "N/A",
-          "search": "O(log n)",
-          "insertion": "O(log n)",
-          "deletion": "O(log n)"
-        }
-      }
-    },
-    {
-      "id": 7,
-      "title": "Мэп",
-      "title_original": "Map",
-      "description": "Map - это коллекция пар ключ-значение, где ключи могут быть любого типа данных. Основное его преимущество в том, что мы можем за константное время добавлять и извлекать объекты.",
-      "advantages": [
-        "Быстрый доступ к значениям по ключу",
-        "Гибкость структуры"
-      ],
-      "disadvantages": [
-        "Дополнительное затраты на память для хранения ключей",
-        "Не гарантированный порядок элементов"
-      ],
-      "complexities": {
-        "average": {
-          "access": "O(1)",
-          "search": "O(1)",
-          "insertion": "O(1)",
-          "deletion": "O(1)"
+        {
+            "id": 7,
+            "title": "Мэп",
+            "title_original": "Map",
+            "description": "Map - это коллекция пар ключ-значение, где ключи могут быть любого типа данных. Основное его преимущество в том, что мы можем за константное время добавлять и извлекать объекты.",
+            "advantages": [
+                "Быстрый доступ к значениям по ключу",
+                "Гибкость структуры"
+            ],
+            "disadvantages": [
+                "Дополнительное затраты на память для хранения ключей",
+                "Не гарантированный порядок элементов"
+            ],
+            "complexities": {
+                "average": {
+                    "access": "O(1)",
+                    "search": "O(1)",
+                    "insertion": "O(1)",
+                    "deletion": "O(1)"
+                },
+                "worst": {
+                    "access": "O(n)",
+                    "search": "O(n)",
+                    "insertion": "O(n)",
+                    "deletion": "O(n)"
+                }
+            }
         },
-        "worst": {
-          "access": "O(n)",
-          "search": "O(n)",
-          "insertion": "O(n)",
-          "deletion": "O(n)"
-        }
-      }
-    },
-    {
-      "id": 8,
-      "title": "Двоичное дерево",
-      "title_original": "Binary Trees",
-      "description": "Двоичное дерево - это иерархическая структура данных, в которой каждый узел имеет не более двух потомков. Двоичные деревья часто используются для быстрого поиска и сортировки данных.",
-      "advantages": [
-        "Быстрый поиск, вставка и удаление в сбалансированных деревьях",
-        "Гарантированное время выполнения операций"
-      ],
-      "disadvantages": [
-        "Сложная реализация балансировки деревьев",
-        "Потребляет больше памяти, чем массивы или списки"
-      ],
-      "complexities": {
-        "average": {
-          "access": "O(log((n))",
-          "search": "O(log((n))",
-          "insertion": "O(log((n))",
-          "deletion": "O(log((n))"
+        {
+            "id": 8,
+            "title": "Двоичное дерево",
+            "title_original": "Binary Trees",
+            "description": "Двоичное дерево - это иерархическая структура данных, в которой каждый узел имеет не более двух потомков. Двоичные деревья часто используются для быстрого поиска и сортировки данных.",
+            "advantages": [
+                "Быстрый поиск, вставка и удаление в сбалансированных деревьях",
+                "Гарантированное время выполнения операций"
+            ],
+            "disadvantages": [
+                "Сложная реализация балансировки деревьев",
+                "Потребляет больше памяти, чем массивы или списки"
+            ],
+            "complexities": {
+                "average": {
+                    "access": "O(log((n))",
+                    "search": "O(log((n))",
+                    "insertion": "O(log((n))",
+                    "deletion": "O(log((n))"
+                },
+                "worst": {
+                    "access": "O(log((n))",
+                    "search": "O(log((n))",
+                    "insertion": "O(log((n))",
+                    "deletion": "O(log((n))"
+                }
+            }
         },
-        "worst": {
-          "access": "O(log((n))",
-          "search": "O(log((n))",
-          "insertion": "O(log((n))",
-          "deletion": "O(log((n))"
-        }
-      }
-    },
-    {
-      "id": 9,
-      "title": "N-арное дерево",
-      "title_original": "N-ary tree",
-      "description": "N-арное дерево - это структура данных, в которой каждый узел может иметь несколько потомков (больше двух). Он часто используется для представления иерархических данных, таких как файловые системы.",
-      "advantages": [
-        "Гибкость при хранении иерархических данных",
-        "Эффективные операции навигации"
-      ],
-      "disadvantages": [
-        "Сложная реализация",
-        "Потенциально медленный поиск в несбалансированных деревьях"
-      ],
-      "complexities": {
-        "average": {
-          "access": "O(log n)",
-          "search": "O(log n)",
-          "insertion": "O(log n)",
-          "deletion": "O(log n)"
+        {
+            "id": 9,
+            "title": "N-арное дерево",
+            "title_original": "N-ary tree",
+            "description": "N-арное дерево - это структура данных, в которой каждый узел может иметь несколько потомков (больше двух). Он часто используется для представления иерархических данных, таких как файловые системы.",
+            "advantages": [
+                "Гибкость при хранении иерархических данных",
+                "Эффективные операции навигации"
+            ],
+            "disadvantages": [
+                "Сложная реализация",
+                "Потенциально медленный поиск в несбалансированных деревьях"
+            ],
+            "complexities": {
+                "average": {
+                    "access": "O(log n)",
+                    "search": "O(log n)",
+                    "insertion": "O(log n)",
+                    "deletion": "O(log n)"
+                },
+                "worst": {
+                    "access": "O(n)",
+                    "search": "O(n)",
+                    "insertion": "O(n)",
+                    "deletion": "O(n)"
+                }
+            }
         },
-        "worst": {
-          "access": "O(n)",
-          "search": "O(n)",
-          "insertion": "O(n)",
-          "deletion": "O(n)"
-        }
-      }
-    },
-    {
-      "id": 10,
-      "title": "Графы",
-      "title_original": "Graphs",
-      "description": "Графы представляют собой совокупность вершин и рёбер, связывающих эти вершины. Графы могут быть направленными (ориентированными) или ненаправленными.",
-      "advantages": [
-        "Моделирование сложных отношений",
-        "Решение разнообразных задач, таких как поиск пути и анализ сетей"
-      ],
-      "disadvantages": [
-        "Сложная реализация некоторых алгоритмов",
-        "Неэффективность для некоторых задач, таких как поиск в глубину"
-      ],
-      "complexities": {
-        "average": {
-          "access": "O(1)",
-          "search": "O(V + E)",
-          "insertion": "O(1)",
-          "deletion": "O(1)"
+        {
+            "id": 10,
+            "title": "Графы",
+            "title_original": "Graphs",
+            "description": "Графы представляют собой совокупность вершин и рёбер, связывающих эти вершины. Графы могут быть направленными (ориентированными) или ненаправленными.",
+            "advantages": [
+                "Моделирование сложных отношений",
+                "Решение разнообразных задач, таких как поиск пути и анализ сетей"
+            ],
+            "disadvantages": [
+                "Сложная реализация некоторых алгоритмов",
+                "Неэффективность для некоторых задач, таких как поиск в глубину"
+            ],
+            "complexities": {
+                "average": {
+                    "access": "O(1)",
+                    "search": "O(V + E)",
+                    "insertion": "O(1)",
+                    "deletion": "O(1)"
+                },
+                "worst": {
+                    "access": "O(1)",
+                    "search": "O(V + E)",
+                    "insertion": "O(1)",
+                    "deletion": "O(1)"
+                }
+            }
         },
-        "worst": {
-          "access": "O(1)",
-          "search": "O(V + E)",
-          "insertion": "O(1)",
-          "deletion": "O(1)"
+        {
+            "id": 11,
+            "title": "Хеш-таблица",
+            "title_original": "Hash Tables",
+            "description": "Хеш-таблица (или хеш-мап) - это структура данных в JavaScript, предназначенная для эффективного хранения и поиска пар 'ключ-значение'.",
+            "advantages": [
+                "Быстрый поиск и вставка в среднем случае",
+                "Гибкость при выборе хеш-функции"
+            ],
+            "disadvantages": [
+                "Может возникнуть коллизия хешей",
+                "Некоторые операции могут быть нестабильны в худшем случае"
+            ],
+            "complexities": {
+                "average": {
+                    "access": "N/A",
+                    "search": "O(1)",
+                    "insertion": "O(1)",
+                    "deletion": "O(1)"
+                },
+                "worst": {
+                    "access": "N/A",
+                    "search": "O(n)",
+                    "insertion": "O(n)",
+                    "deletion": "O(n)"
+                }
+            }
         }
-      }
-    },
-    {
-      "id": 11,
-      "title": "Хеш-таблица",
-      "title_original": "Hash Tables",
-      "description": "Хеш-таблица (или хеш-мап) - это структура данных в JavaScript, предназначенная для эффективного хранения и поиска пар 'ключ-значение'.",
-      "advantages": [
-        "Быстрый поиск и вставка в среднем случае",
-        "Гибкость при выборе хеш-функции"
-      ],
-      "disadvantages": [
-        "Может возникнуть коллизия хешей",
-        "Некоторые операции могут быть нестабильны в худшем случае"
-      ],
-      "complexities": {
-        "average": {
-          "access": "N/A",
-          "search": "O(1)",
-          "insertion": "O(1)",
-          "deletion": "O(1)"
+    ],
+    "documentations": [
+        {
+            "id": 1,
+            "title": "HTML",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
         },
-        "worst": {
-          "access": "N/A",
-          "search": "O(n)",
-          "insertion": "O(n)",
-          "deletion": "O(n)"
+        {
+            "id": 2,
+            "title": "CSS",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+            "id": 3,
+            "title": "JavaScript",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+            "id": 4,
+            "title": "React",
+            "link": "https://reactjs.org/docs/getting-started.html"
+        },
+        {
+            "id": 5,
+            "title": "React Native",
+            "link": "https://reactnative.dev/"
+        },
+        {
+            "id": 6,
+            "title": "Node",
+            "link": "https://nodejs.org/ru/docs/"
+        },
+        {
+            "id": 7,
+            "title": "Angular",
+            "link": "https://angular.io/"
+        },
+        {
+            "id": 8,
+            "title": "Vue",
+            "link": "https://vuejs.org/"
+        },
+        {
+            "id": 9,
+            "title": "Next",
+            "link": "https://nextjs.org/"
+        },
+        {
+            "id": 10,
+            "title": "Typescript",
+            "link": "https://www.typescriptlang.org/"
         }
-      }
-    }
-  ],
-  "documentations": [
-    {
-      "id": 1,
-      "title": "HTML",
-      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
-    },
-    {
-      "id": 2,
-      "title": "CSS",
-      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
-    },
-    {
-      "id": 3,
-      "title": "JavaScript",
-      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-    },
-    {
-      "id": 4,
-      "title": "React",
-      "link": "https://reactjs.org/docs/getting-started.html"
-    },
-    {
-      "id": 5,
-      "title": "React Native",
-      "link": "https://reactnative.dev/"
-    },
-    {
-      "id": 6,
-      "title": "Node",
-      "link": "https://nodejs.org/ru/docs/"
-    },
-    {
-      "id": 7,
-      "title": "Angular",
-      "link": "https://angular.io/"
-    },
-    {
-      "id": 8,
-      "title": "Vue",
-      "link": "https://vuejs.org/"
-    },
-    {
-      "id": 9,
-      "title": "Next",
-      "link": "https://nextjs.org/"
-    },
-    {
-      "id": 10,
-      "title": "Typescript",
-      "link": "https://www.typescriptlang.org/"
-    }
-  ]
+    ]
 }
