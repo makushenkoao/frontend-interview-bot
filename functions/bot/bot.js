@@ -1,5 +1,6 @@
-const { Telegraf, Markup } = require('telegraf');
-const { WORLD_FOR_HEARS } = require('../../src/constants/constants');
+const { Telegraf, Markup, Scenes, session} = require('telegraf');
+const supportScene = require("../../src/scenes/support");
+const { WORLD_FOR_HEARS, LIMIT_CONFIG, STICKER_ID} = require('../../src/constants/constants');
 const { keys, sendKeys } = require('../../src/commands/keys/keys');
 const start = require('../../src/commands/start/start');
 const learn = require('../../src/commands/learn/learn');
@@ -12,15 +13,31 @@ const showAlgorithmDetails = require('../../src/commands/showAlgorithmDetails/sh
 const showStructuresMenu = require('../../src/commands/showStructuresMenu/showStructuresMenu');
 const showStructureDetails = require('../../src/commands/showStructureDetails/showStructureDetails');
 const sendAnswer = require('../../src/commands/sendAnswer/sendAnswer');
+const rateLimit = require("telegraf-ratelimit");
+const support = require("../../src/commands/support/support");
+const donate = require("../../src/commands/donate/donate");
 require('dotenv').config();
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
+
+const stage = new Scenes.Stage([supportScene]);
+
+bot.use(session());
+bot.use(stage.middleware());
+bot.use(rateLimit(LIMIT_CONFIG));
+
+// events
+bot.on('sticker', (ctx) => {
+    ctx.replyWithSticker(STICKER_ID);
+});
 
 // commands
 bot.command('start', start);
 bot.command('learn', learn);
 bot.command('keys', keys);
 bot.command('documentation', documentation);
+bot.command('support', support);
+bot.command('donate', donate);
 
 // hears
 bot.hears(WORLD_FOR_HEARS, sendQuestion);
