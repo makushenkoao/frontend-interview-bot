@@ -1,18 +1,34 @@
 const axios = require('axios');
 const { Markup } = require('telegraf');
 
+const activeRequests = new Set();
+
 const keys = async (ctx) => {
+    if (activeRequests.has(ctx.update.update_id)) {
+        return;
+    }
+
+    activeRequests.add(ctx.update.update_id);
+
     const keyboard = Markup.inlineKeyboard([
         [Markup.button.callback('English', 'download-keys-en')],
-        [Markup.button.callback('Руссикй', 'download-keys-ru')],
+        [Markup.button.callback('Русский', 'download-keys-ru')],
         [Markup.button.callback('Українська', 'download-keys-ua')],
     ]);
 
     await ctx.replyWithMarkdown('Выберите язык PDF файла:', keyboard);
+
+    activeRequests.delete(ctx.update.update_id);
 };
 
 const sendKeys = async (ctx) => {
     const lang = ctx.match[1];
+
+    if (activeRequests.has(ctx.update.update_id)) {
+        return;
+    }
+
+    activeRequests.add(ctx.update.update_id);
 
     const baseUrl = 'https://drive.google.com/uc?export=download';
     let fileId = '';
@@ -40,6 +56,8 @@ const sendKeys = async (ctx) => {
         console.error('Error sending PDF:', error);
         ctx.reply('К сожалению, при отправке PDF-файла произошла ошибка.');
     }
+
+    activeRequests.delete(ctx.update.update_id);
 };
 
 module.exports = {
